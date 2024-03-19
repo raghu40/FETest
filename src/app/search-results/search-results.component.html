@@ -1,0 +1,9 @@
+<div class="container">
+    <div *ngIf="results.length > 0" class="list-group">
+      <div *ngFor="let repo of results" class="list-group-item" (click)="showDetails(repo)">
+        <h4 class="list-group-item-heading">{{ repo.full_name }}</h4>
+        <p class="list-group-item-text">{{ repo.description }}</p>
+        <app-repository-details *ngIf="repo.showDetails" [repository]="repo"></app-repository-details>
+      </div>
+    </div>
+  </div>

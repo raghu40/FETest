@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <div *ngIf="repository" class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{ repository.full_name }}</h3>
+          </div>
+          <div class="panel-body">
+            <p>{{ repository.description }}</p>
+            <p>Stars: {{ repository.stargazers_count }}</p>
+            <p>Forks: {{ repository.forks_count }}</p>
+            <p>Language: {{ repository.language }}</p>
+            <p>Updated: {{ repository.updated_at | date }}</p>
+            <a [href]="repository.html_url" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <label for="search"> Please Enter Respository Name</label>
+        <input type="text" class="form-control" name="search" [formControl]="searchInput" placeholder="Search repositories..." autocomplete="off">
+      </div>
+    </div>
+    <div class="alert alert-info space" *ngIf="isDataLoading">{{ errorMessage ? errorMessage : 'Fetching Data, Please wait...' }}</div>
+    <div class="row space" *ngIf="!isDataLoading">
+        <app-search-results [results]="searchResults"></app-search-results>
+    </div>
+
+</div>
+  
+  
+
+  

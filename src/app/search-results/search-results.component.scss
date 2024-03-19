@@ -1,0 +1,22 @@
+/* Add this custom CSS to your styles.css or component-specific CSS file */
+
+/* List group */
+.list-group-item {
+    background-color: #f5f5f5; /* Light grayish-blue background */
+    border-color: #ccc; /* Border color */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .list-group-item:hover {
+    background-color: #e0e0e0; /* Slightly darker grayish-blue background on hover */
+  }
+  
+  .list-group-item-heading {
+    color: #37474f; /* Dark blue-gray text color */
+  }
+  
+  .list-group-item-text {
+    color: #546e7a; /* Medium blue-gray text color */
+  }
+  

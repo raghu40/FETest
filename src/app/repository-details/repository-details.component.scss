@@ -1,0 +1,44 @@
+/* Search results */
+.list-group-item {
+    background-color: #ecf0f1; /* Light blue-gray background */
+    border-color: #bdc3c7; /* Border color */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .list-group-item:hover {
+    background-color: #dfe6e9; /* Slightly darker background on hover */
+  }
+  
+  /* Repository panel */
+  .panel {
+    border-color: #3498db; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .panel-heading {
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text */
+  }
+  
+  .panel-title {
+    margin-top: 0; /* Remove top margin for title */
+  }
+  
+  .panel-body {
+    padding: 20px; /* Add padding */
+  }
+  
+  .panel-body p {
+    margin-bottom: 10px; /* Add space between paragraphs */
+  }
+  
+  .panel-body a {
+    color: #3498db; /* Blue link color */
+  }
+  
+  .panel-body a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #2980b9; /* Darker blue on hover */
+  }
+  
